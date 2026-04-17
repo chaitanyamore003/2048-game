@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #faf8ef;
+
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+
+    min-height: 100vh;
+}
+
+/* Title */
+.title {
+    font-size: 64px;
+    margin: 0;
+    color: #776e65;
+    text-align: center;
+}
+
+/* Divider line */
+.divider {
+    width: 100%;
+    border: none;
+    border-top: 2px solid #bbada0;
+    margin: 10px 0 20px;
+}
+
+/* Controls row */
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* spread evenly */
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+/* Button */
+#new-game {
+    height: 60px;
+    width: 130px;
+    background: #8f7a66;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container {
+    width: 420px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 60px;
+    margin: 0;
+    color: #776e65;
+    
+}
+
+/* Score boxes */
+.score-box {
+    background: #bbada0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    min-width: 80px;
+}
+
+.score-box span {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.score-box h2 {
+    margin: 0;
+}
+
+/* Board */
+#board {
+    height: 400px;
+    width: 400px;
+
+    background: linear-gradient(145deg, #bbada0, #a39489);
+    border-radius: 16px;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    gap: 12px;
+
+    box-shadow: 
+        0 20px 40px rgba(0,0,0,0.2),
+        inset 0 3px 8px rgba(255,255,255,0.2);
+}
+
+/* Tile */
+.tile {
+    height: 90px;
+    width: 90px;
+
+    border-radius: 10px;
+    background: #cdc1b4;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.15s ease-in-out;
+}
+
+/* Hover effect */
+.tile:hover {
+    transform: scale(1.05);
+}
+
+/* Tile colors */
+.x2 { background: #eee4da; color: #776e65; }
+.x4 { background: #ede0c8; color: #776e65; }
+.x8 { background: #f2b179; color: white; }
+.x16 { background: #f59563; color: white; }
+.x32 { background: #f67c5f; color: white; }
+.x64 { background: #f65e3b; color: white; }
+.x128 { background: #edcf72; color: white; }
+.x256 { background: #edcc61; color: white; }
+.x512 { background: #edc850; color: white; }
+.x1024 { background: #edc53f; color: white; }
+.x2048 { background: #edc22e; color: white; }
+.x4096 { background: #3c3a32; color: white; }
+.x8192 { background: #000; color: white; }
+
+/* Footer */
+.credit {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #776e65;
+}
+.controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Button styling */
+#new-game {
+    background: #8f7a66;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#new-game:hover {
+    background: #6f5e4d;
+    transform: scale(1.05);
+}
