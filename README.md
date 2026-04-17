@@ -7,7 +7,7 @@ This project focuses on clean game logic, efficient tile merging, and a simple y
 
 ## 🚀 Live Demo
 
-👉 https://your-username.github.io/2048-game/
+👉 https://chaitanyamore003.github.io/2048-game/
 
 ---
 
